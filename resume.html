@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -12,7 +11,7 @@
     <!-- Custom Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -21,41 +20,33 @@
 
     <style>
         .nav-link:hover i {
-            transform: scale(1.2);
+            transform: scale(1.2); /* Smaller scale */
         }
-
         .bg-light h6 {
             font-weight: bold;
         }
-
         .bg-light p {
             font-weight: normal;
         }
-
         .hover-effect {
             transition: transform 0.3s ease;
         }
-
         .hover-effect:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Smaller scale */
         }
-
         .col {
             overflow: hidden;
             position: relative;
         }
-
         .d-flex {
             position: relative;
-            transition: transform 0.3s ease, border-radius 0.3s ease;
+            transition: transform 0.3s ease, border-radius 0.3s ease; /* Add transition for border radius */
         }
-
         .col:hover .d-flex {
-            transform: scale(1.05);
-            border-radius: 10px;
+            transform: scale(1.05); /* Smaller scale */
+            border-radius: 10px; /* Set the desired border radius value */
             z-index: 1;
         }
-
         .d-flex::before {
             content: "";
             position: absolute;
@@ -68,118 +59,29 @@
             transition: opacity 0.3s ease;
             z-index: -1;
         }
-
         .col:hover .d-flex::before {
             opacity: 1;
         }
-
         .d-flex:hover {
             background-color: #ebebeb;
-            color: #000000;
+            color: #000000; /* Change text color to black */
             font-weight: bold;
         }
-
-        /* Additional responsive adjustments */
-        .container {
-            max-width: 100%;
-        }
-
-        .name,
-        .contact {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            margin: 10px 0;
-            justify-content: center;
-        }
-
-        .name i,
-        .contact i {
-            margin-right: 10px;
-        }
-
-        .name,
-        .contact {
-            font-size: 16px;
-        }
-
-        .card {
-            margin: 10px 0;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .d-flex {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .row {
-            margin: 0;
-        }
-
-        h6 {
-            margin-bottom: 5px;
-        }
-
-        @media (max-width: 767.98px) {
-            .navbar {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navbar .container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navbar-toggler {
-                margin-top: 10px;
-            }
-
-            .logo {
-                text-align: center;
-            }
-
-            .nav-item {
-                margin: 5px 0;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-
-            .card-body {
-                padding: 15px;
-            }
-
+        @media (max-width: 767px) {
             .name,
             .contact {
                 font-size: 14px;
-                margin: 5px 0;
-                flex-direction: column;
-                align-items: center;
+                margin-left: 0;
+                margin-bottom: 10px;
+                text-align: center;
             }
-
-            .card {
-                margin: 10px;
-            }
-
-            h6 {
-                font-size: 14px;
-            }
-
-            p {
-                font-size: 12px;
+            .name i,
+            .contact i {
+                margin-right: 5px;
             }
         }
     </style>
 </head>
-
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
         <!-- Navigation-->
@@ -253,7 +155,7 @@
                             <div class="row mb-4">
                                 <div class="col">
                                     <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
-                                        <h6 class="mb-0">Assessment                                        and Feedback:</h6>
+                                        <h6 class="mb-0">Assessment   and Feedback:</h6>
                                         <p class="mb-0 ms-2">Progress Monitoring | Performance Evaluation | Constructive Feedback</p>
                                     </div>
                                 </div>
@@ -403,6 +305,5 @@
     <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
 </body>
-
 </html>
 
