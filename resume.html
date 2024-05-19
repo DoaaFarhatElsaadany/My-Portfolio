@@ -1,72 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Doaa El Saadany</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Doaa El Saadany</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
         .nav-link:hover i {
             transform: scale(1.2); /* Smaller scale */
         }
         .bg-light h6 {
-        font-weight: bold;
-    }
-    
-    .bg-light p {
-        font-weight: normal;
-    }
-        .name,
-        .contact {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            margin-left: 120px;
-            margin-bottom: 10px;
+            font-weight: bold;
         }
-
-        .name i,
-        .contact i {
-            margin-right: 10px;
+        .bg-light p {
+            font-weight: normal;
         }
-
         .hover-effect {
             transition: transform 0.3s ease;
         }
-
         .hover-effect:hover {
             transform: scale(1.05); /* Smaller scale */
         }
-
         .col {
             overflow: hidden;
             position: relative;
         }
-
         .d-flex {
             position: relative;
             transition: transform 0.3s ease, border-radius 0.3s ease; /* Add transition for border radius */
         }
-
         .col:hover .d-flex {
             transform: scale(1.05); /* Smaller scale */
             border-radius: 10px; /* Set the desired border radius value */
             z-index: 1;
         }
-
         .d-flex::before {
             content: "";
             position: absolute;
@@ -79,269 +59,256 @@
             transition: opacity 0.3s ease;
             z-index: -1;
         }
-
         .col:hover .d-flex::before {
             opacity: 1;
         }
-
         .d-flex:hover {
             background-color: #ebebeb;
             color: #000000; /* Change text color to black */
             font-weight: bold;
         }
+        @media (max-width: 767px) {
+            .name,
+            .contact {
+                font-size: 14px;
+                margin-left: 0;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .name i,
+            .contact i {
+                margin-right: 5px;
+            }
+        }
     </style>
-        
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <div class="logo"><span>English </span> Tutor</div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <nav>
-                        <ul class="nav">
-                          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                          <li class="nav-item"><a class="nav-link" href="index.html#about"><i class="fas fa-info-circle"></i> About Me</a></li>
-                          <li class="nav-item"><a class="nav-link" href="resume.html"><i class="fas fa-file-alt"></i> Skills</a></li>
-                          <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fas fa-folder-open"></i> Services</a></li>
-                          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                        </ul>
-                      </nav>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <div class="logo"><span>English </span>Tutor</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about"><i class="fas fa-info-circle"></i> About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html"><i class="fas fa-file-alt"></i> Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fas fa-folder-open"></i> Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-            <!-- Page Content-->
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0 hover-effect">
-                        <span class="text-gradient d-inline">Skills</span>
-                      </h1>
-                                      </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0 hover-effect">
+                    <span class="text-gradient d-inline">Skills</span>
+                </h1>
+            </div>
 
-                <!-- Skillset Card-->
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
-                        <!-- Professional skills list-->
-                        <div class="mb-5">
-                            <div class="d-flex align-items-center mb-4 fw-bolder mb-0 hover-effect">
-                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                <h3 class="fw-bolder mb-0 hover-effect">
-                                    <span class="text-gradient d-inline">Professional Skills</span>
-                                  </h3>
-                         </div>
-                         <div class="container">
+            <!-- Skillset Card-->
+            <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                    <!-- Professional skills list-->
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center mb-4 fw-bolder mb-0 hover-effect">
+                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+                            <h3 class="fw-bolder mb-0 hover-effect">
+                                <span class="text-gradient d-inline">Professional Skills</span>
+                            </h3>
+                        </div>
+                        <div class="container">
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">English Language Instruction:</h6>
                                         <p class="mb-0 ms-2">British Curriculum | American Curriculum | Online Teaching | Teaching and Lecturing</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Conversation Skills:</h6>
                                         <p class="mb-0 ms-2">Children | Adults | Effective Communication | Pronunciation | Perfect Accent | Interactive Activities</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Education Technology:</h6>
                                         <p class="mb-0 ms-2">Online Platforms | Virtual Classroom Tools | Multimedia Integration</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Adaptability:</h6>
                                         <p class="mb-0 ms-2">Tailoring Content | Flexibility in Teaching Approaches | Adjusting to Student Needs</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Assessment and Feedback:</h6>
                                         <p class="mb-0 ms-2">Progress Monitoring | Performance Evaluation | Constructive Feedback</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Time Management:</h6>
                                         <p class="mb-0 ms-2">Lesson Planning | Class Scheduling | Task Prioritization</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Interpersonal Skills:</h6>
                                         <p class="mb-0 ms-2">Building Rapport | Empathy | Communication with Students and Parents</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column  align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Creativity:</h6>
                                         <p class="mb-0 ms-2">Innovative Teaching Methods | Developing Engaging Learning Materials</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Problem Solving:</h6>
                                         <p class="mb-0 ms-2">Addressing Student Challenges | Finding Solutions to Learning Obstacles</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Continuous Learning:</h6>
                                         <p class="mb-0 ms-2">Professional Development | Staying Updated on Educational Trends</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Cultural Sensitivity:</h6>
                                         <p class="mb-0 ms-2">Understanding Diverse Student Backgrounds | Respect for Different Cultures</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Team Collaboration:</h6>
                                         <p class="mb-0 ms-2">Working with Other Educators | Coordination with School Staff</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Leadership:</h6>
                                         <p class="mb-0 ms-2">Mentorship | Guidance | Leading Classroom Activities</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row mb-4">
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 shadow-sm p-3 h-100">
+                                    <div class="d-flex flex-column align-items-center align-items-md-start bg-light rounded-4 shadow-sm p-3 h-100">
                                         <h6 class="mb-0">Positive Attitude:</h6>
                                         <p class="mb-0 ms-2">Enthusiasm for Teaching | Motivating Students | Encouraging Learning</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <br>
-                <!-- Education Section-->
-                <section>
-                    <h2 class="text-secondary fw-bolder mb-4 fw-bolder mb-0 hover-effect">Education</h2>
-                    <!-- Education Card 1-->
-                    <div class="card shadow border-0 rounded-4 mb-5">
-                        <div class="card-body p-5">
-                            <div class="row align-items-center gx-5">
-                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                    <div class="bg-light p-4 rounded-4">
-                                        <div class="text-secondary fw-bolder mb-2">Bachelor of Arts, English Language, Zagazig University - 1998</div>
-                                        <div class="mb-4">
-                                            <ul class="list-unstyled">
-                                                <li class="mb-3 small">An interpretation course from continuing education at the American University in Cairo, 03/1998</li>
-                                                <li class="mb-3 small">A written translation course from continuing education at the American University in Cairo, 03/1998</li>
-                                                <li class="mb-3 small">ICDL course from the Computer Science and Information Technology Training Center 09/1999</li>
-                                            </ul>
-                                        </div>                                      
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
                     </div>
-                    
-                </section>
-
-                <!-- Experience Section-->
-                <section>
-                            
-                    <!-- Experience Card 1-->
-                    <div class="card shadow border-0 rounded-4 mb-5">
-                        <div class="card-body p-5">
-                            <div class="row align-items-center gx-5">
-                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                    <div class="bg-light p-4 rounded-4">
-                                        <!-- Replace PHP, MYSQL, HTML, CSS, Bootstrap with English proficiency -->
-                                        <div class="small fw-bolder">English: Native (British and American)</div>
+                </div>
+            </div>
+            <!-- Education Section-->
+            <section>
+                <h2 class="text-secondary fw-bolder mb-4 fw-bolder mb-0 hover-effect">Education</h2>
+                <!-- Education Card 1-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-secondary fw-bolder mb-2">Bachelor of Arts, English Language, Zagazig University - 1998</div>
+                                    <div class="mb-4">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3 small">An interpretation course from continuing education at the American University in Cairo, 03/1998</li>
+                                            <li class="mb-3 small">A written translation course from continuing education at the American University in Cairo, 03/1998</li>
+                                            <li class="mb-3 small">ICDL course from the Computer Science and Information Technology Training Center 09/1999</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>
-                    
-                </section>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        
-                        
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            
-                        </section>
                     </div>
                 </div>
-            </div>
-            <h2 class="name mb-4 text-start"><i class="fas fa-user"></i> Zagazig,Kawmia, Omar Ebn Elkhattab St | Cairo, Fifth Settelment, El Lotus, Egypt</h2>
-            <h4 class="contact mb-3 text-start"><i class="fas fa-phone"></i> Mobile: +201288422752</h4>
-            <h4 class="contact mb-3 text-start"><i class="fas fa-envelope"></i> Email: doaafarahatahmed@gmail.com</h4>
-
-            
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">All copyrights reserved to  &copy;Ahmed Abd Ellatif  2023 </div></div>
-                    <div class="col-auto">
-                        <a class="small" href="index.html">Home</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="projects.html">Services</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="contact.html">Contact</a>
+            </section>
+            <!-- Experience Section-->
+            <section>
+                <!-- Experience Card 1-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <!-- Replace PHP, MYSQL, HTML, CSS, Bootstrap with English proficiency -->
+                                    <div class="small fw-bolder">English: Native (British and American)</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Divider-->
+                    <div class="pb-5"></div>
+                    <!-- Skills Section-->
+                    <section></section>
+                </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        
-    </body>
-    
+        </div>
+        <div class="container">
+            <h2 class="name mb-4 text-center"><i class="fas fa-user"></i> Zagazig, Kawmia, Omar Ebn Elkhattab St | Cairo, Fifth Settlement, El Lotus, Egypt</h2>
+            <h4 class="contact mb-3 text-center"><i class="fas fa-phone"></i> Mobile: +201288422752</h4>
+            <h4 class="contact mb-3 text-center"><i class="fas fa-envelope"></i> Email: doaafarahatahmed@gmail.com</h4>
+        </div>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0">All copyrights reserved to &copy; Ahmed Abd Ellatif 2023</div></div>
+                <div class="col-auto">
+                    <a class="small" href="index.html">Home</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="projects.html">Services</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 </html>
+
